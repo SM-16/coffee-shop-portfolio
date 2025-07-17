@@ -1,0 +1,35 @@
+/* Navbar */
+
+#Navbar{
+    background: linear-gradient(  rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0));
+    position: absolute;
+    width: 100%;
+}
+
+html{
+    scroll-snap-type: y mandatory;
+}
+#card{
+    scroll-snap-align: start;
+    background: var(--c);
+    width: 100%;
+    height: 100vh;
+}
+@media (width >= 500px) {
+    #card-larger{
+        scroll-snap-align: center;
+        background: var(--c);
+        width: 100%;
+        height: 172vh;
+    }
+}
+
+@media (500px <= width) {
+      #card-larger{
+          scroll-snap-align: start;
+          background: var(--c);
+          width: 100%;
+          height: 100vh;
+      }
+  }
+  
