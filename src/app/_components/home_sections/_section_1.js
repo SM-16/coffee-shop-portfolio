@@ -10,7 +10,7 @@ export default function Section1(){
             initial={{y:-60, opacity:0}}
             animate={{y:0, opacity:1}}
             transition={{duration:1.25, delay:0.25}}
-            className="md:text-7xl text-3xl  text-slate-100 ">“The best beverage I've ever drunk”</motion.h1>
+            className="md:text-7xl text-3xl  text-slate-100 ">“The best beverage I&apos;ve ever drunk”</motion.h1>
             <motion.p
             initial={{y:-40, opacity:0}}
             animate={{y:0, opacity:1}}
