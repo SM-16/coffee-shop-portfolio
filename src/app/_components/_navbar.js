@@ -11,23 +11,23 @@ export default function Navbar(){
             {
                 pathname == "/" 
                 ? 
-                <TransitionLink children={"Home"} href={"/"} className="font-semibold text-slate-100"/>
+                <TransitionLink children="Home" href={"/"} className="font-semibold text-slate-100"/>
                 :
-                <TransitionLink children={"Home"} href={"/"} />
+                <TransitionLink children="Home" href={"/"} />
             }
             {
                 pathname == "/about_us" 
                 ? 
-                <TransitionLink children={"About"} href={"/about_us"} className="font-semibold text-slate-100"/>
+                <TransitionLink children="About" href={"/about_us"} className="font-semibold text-slate-100"/>
                 :
-                <TransitionLink children={"About"} href={"/about_us"} />
+                <TransitionLink children="About" href={"/about_us"} />
             }
             {
                 pathname == "/pricing" 
                 ? 
-                <TransitionLink children={"Pricing"} href={"/pricing"} className="font-semibold text-slate-100"/>
+                <TransitionLink children="Pricing" href={"/pricing"} className="font-semibold text-slate-100"/>
                 :
-                <TransitionLink children={"Pricing"} href={"/pricing"} />
+                <TransitionLink children="Pricing" href={"/pricing"} />
             }
 
         </div>
