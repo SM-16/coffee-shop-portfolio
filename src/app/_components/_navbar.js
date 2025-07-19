@@ -1,6 +1,5 @@
 "use client"
 import Link from "next/link"
-import TransitionLink from "./_transisitonLink"
 import "./index.css"
 
 import { usePathname } from "next/navigation"
@@ -11,23 +10,23 @@ export default function Navbar(){
             {
                 pathname == "/" 
                 ? 
-                <TransitionLink children={"Home"} href={"/"} className="font-semibold text-slate-100"/>
+                <Link href={"/"} className="font-semibold text-slate-100">Home</Link>
                 :
-                <TransitionLink children={"Home"} href={"/"} />
+                <Link href={"/"}>Home</Link>
             }
             {
                 pathname == "/about_us" 
                 ? 
-                <TransitionLink children={"About"} href={"/about_us"} className="font-semibold text-slate-100"/>
+                <Link href={"/about_us"} className="font-semibold text-slate-100">About</Link>
                 :
-                <TransitionLink children={"About"} href={"/about_us"} />
+                <Link href={"/about_us"}>About</Link>
             }
             {
                 pathname == "/pricing" 
                 ? 
-                <TransitionLink children={"Pricing"} href={"/pricing"} className="font-semibold text-slate-100"/>
+                <Link href={"/pricing"} className="font-semibold text-slate-100">Pricing</Link>
                 :
-                <TransitionLink children={"Pricing"} href={"/pricing"} />
+                <Link href={"/pricing"}>Pricing</Link>
             }
 
         </div>
